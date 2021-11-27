@@ -31,8 +31,8 @@ export default {
   data(){
     return{
       loginForm:{
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '123456'
       },
       //表单验证规则
       loginrules:{
@@ -63,10 +63,9 @@ export default {
         //   console.log(error)
         // })
         const {data} = await this.$http.post('login',this.loginForm)
-        if(data.meta.status != 200){
+        if(data.meta.status !== 200){
           this.$message.error("登录失败！")
         }else{
-
           this.$message.success("登录成功！")
           window.sessionStorage.setItem("token",data.data.token)
           this.$router.push("/home")
