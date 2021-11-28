@@ -8,6 +8,7 @@ const Welcome =()=>import('components/Welcome')
 const Users = ()=>import('components/user/Users')
 const Rights = ()=>import('components/power/Rights')
 const Roles = ()=>import('components/power/Roles')
+const Category =()=>import('components/goods/Category')
 
 const routes = [
   {
@@ -30,7 +31,9 @@ const routes = [
       /*权限列表*/
       {path: '/rights',component: Rights},
       /*角色列表*/
-      {path:'/roles',component: Roles}
+      {path:'/roles',component: Roles},
+      /*商品分类*/
+      {path:'/categories',component:Category}
     ]
   }
 ]
