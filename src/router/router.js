@@ -6,6 +6,8 @@ const Login = ()=>import('components/Login')
 const Home = ()=>import('components/Home')
 const Welcome =()=>import('components/Welcome')
 const Users = ()=>import('components/user/Users')
+const Rights = ()=>import('components/power/Rights')
+const Roles = ()=>import('components/power/Roles')
 
 const routes = [
   {
@@ -21,8 +23,14 @@ const routes = [
     component: Home,
     children:[
       {path: '/home',redirect: 'welcome'},
+      /*欢迎页*/
       {path: 'welcome',component: Welcome},
-      {path: '/users',component: Users}
+      /*用户列表*/
+      {path: '/users',component: Users},
+      /*权限列表*/
+      {path: '/rights',component: Rights},
+      /*角色列表*/
+      {path:'/roles',component: Roles}
     ]
   }
 ]
