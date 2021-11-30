@@ -9,6 +9,7 @@ const Users = ()=>import('components/user/Users')
 const Rights = ()=>import('components/power/Rights')
 const Roles = ()=>import('components/power/Roles')
 const Category =()=>import('components/goods/Category')
+const GoodsParams = ()=>import('components/goods/GoodsParams')
 
 const routes = [
   {
@@ -33,7 +34,9 @@ const routes = [
       /*角色列表*/
       {path:'/roles',component: Roles},
       /*商品分类*/
-      {path:'/categories',component:Category}
+      {path:'/categories',component:Category},
+      /*分类参数*/
+      {path:'/params',component:GoodsParams},
     ]
   }
 ]

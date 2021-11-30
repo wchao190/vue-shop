@@ -3,11 +3,14 @@ import { Button } from 'element-ui'
 import { Form, FormItem, Input, Message,Container,Header,Aside,Main,
          Menu, Submenu,MenuItemGroup,MenuItem,Breadcrumb,BreadcrumbItem,Card,
         Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,Tag,Tree,
-        Select,Option,Cascader}
+        Select,Option,Cascader,Alert,Tabs,TabPane}
 from 'element-ui'
 import { MessageBox } from 'element-ui';
 
 Vue.use(Button)
+Vue.use(TabPane)
+Vue.use(Tabs)
+Vue.use(Alert)
 Vue.use(Cascader)
 Vue.use(Select)
 Vue.use(Option)
