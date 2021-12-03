@@ -28,3 +28,9 @@ html,body,#app{
 .zk-table{
     margin-top: 15px;
 }
+div.el-step__title{
+    font-size: 14px;
+}
+.ql-editor{
+    min-height: 300px;
+}
