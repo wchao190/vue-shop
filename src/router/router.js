@@ -13,6 +13,7 @@ const GoodsParams = ()=>import('components/goods/GoodsParams')
 const GoodsList = ()=>import('components/goods/GoodsList')
 const AddGoods= ()=>import('components/goods/AddGoods')
 const Orders = ()=>import('components/orders/Orders')
+const Report =()=>import('components/report/Report')
 
 const routes = [
   {
@@ -45,7 +46,9 @@ const routes = [
       /*添加商品*/
       {path:'/goods/add',component:AddGoods },
       /*订单列表*/
-      {path: '/orders',component: Orders}
+      {path: '/orders',component: Orders},
+      /*数据报表*/
+      {path: '/reports',component: Report}
     ]
   }
 ]
